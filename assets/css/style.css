@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Oswald:wght@300&family=Raleway:wght@300;500&family=Roboto+Slab:wght@500&display=swap");
+
+body{
+    margin: 0;
+    border: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "raleway", Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*TODO ESTO SE APLICARA A TODOS LOS ELEMENTOS EN MI WEB, ASI NO TENGO QUE APLICARLO
+    INDIVIDUALMENTE A TODOS LOS ELEMENTOS*/
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 500;
+    opacity: 1;
+}
+
+header img{
+    width: 100%;
+    /*CON EL WIDTH AL 100% EN LA IMG,
+     HACE QUE NUESTRA IMAGEN OCUPE POR COMPLETO LA PANTALLA*/
+}
+
+.desarrollo{
+    display: flex;
+    /*CON  DISPLAY-FLEX AUTOMATICAMENTE HICIMOS QUE EL TEXTO SE COLOCARA
+    A LA DERECHA DE MI IMAGEN */
+    justify-content: space-evenly;
+    /*CON SPACE EVENLY HACEMOS QUE LOS ELEMENTOS ESTEN A LA MISMA DISTANCIA
+    ENTRE EL CONTENEDOR Y NUESTROS ELEMENTOS*/
+    align-items: center;
+    /*CON ALIGN CENTER LOGRAMOS QUE NUESTRO TEXTO SE CENTRE
+    DUDA ALBA, AL PONER LA IMAGEN EN UNA CAJA APARTE HACE QUE TODO ESTO 
+    NO LE AFECTE? SOLO MODIFICAMOS EL TEXTO*/
+    padding: 3rem;
+    /*CON PADDING LOGRAMOS QUE NUESTROS ELEMENTOS SE ALEGEN DE NUESTRA CAJA PADRE*/
+}
+
+.texto{
+    text-align: left;    
+    font-size: 1rem;
+    width: 35.5rem;
+    padding: 1.25rem;
+    opacity: 1;
+}
+
+.desarrollo img{
+    margin: auto;
+    /* margin auto ayuda a que la imagen se valla adaptando a las medidas que unno le de*/
+    width: 30rem;
+    height: 25rem;
+    /*CON HEIGHT HACEMOS QUE NUESTRA IMAGEN SE ALARGE MAS VERTICALMENTE */
+    padding: 1.25rem;
+}
+
+.desarrollo img:hover{
+    transform: scale(1.2);
+    border-radius: 1.5rem;
+}
+
+
+.container{
+    background-color: #1e1a13;
+    padding: 2rem;
+}
+
+.container h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.emoticonos{
+    display: flex;
+    /*CON DECLARAR FLEX, DECIMOS QUE NUESTRA CAJA DE EMOTICONOS USARA FLEX
+    SOLO ESTA CAJA*/
+    justify-content: space-evenly;
+    padding: 2rem;
+    /*CON PADDING HACEMOS QUE NUESTROS EMOTICONOS DE ALEJEN DE SU MARGEN DE CAJA QUE SERIA
+    EL CONTAINER*/
+    gap: 1.25rem;
+    /*CON GAP HACEMOS QUE NUESTRA CAJA EMOTICONOS TENGA LA MISMA DISTANCIA TANTO DE 
+    ARRIBA, ABAJO, DERECHA E IZQUIERDA*/
+    font-size: 1.25rem;
+    /*CON FONT SIZE LE DAMOS UN TAMAÑO A NUESTROS ICONOS QUE COMO ESTAN EN UNA CAJA EN
+    CONJUNTO CON NUESTRO TEXTO TAMBIEN LE AFECTA EL TAMAÑO ¿PORQUE NO SE USA WIDHT?*/
+}
+
+.galeria{
+    display: flex;
+    padding: 2rem;
+}
+
+.galeria img{
+    width:90%;
+    /*CON WIDHT 90% MIS IMAGENES OCUPARAN EL 90% PERO DENTRO DE LA CAJA,
+     NO DE TODA LA PANTALLA*/
+
+}
+
+.galeria img:hover{
+    transform:scale(1.2);
+    border-radius: 1rem ;
+}
+
+footer{
+    background-color: #1e1a13;
+    padding: 3rem;
+    margin: auto;
+}
+
+footer a,p{
+    color: #f7f9f9;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-decoration: none;
+}
